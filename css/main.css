@@ -78,12 +78,16 @@ ul li a {
   color: #fff;
   font-family: "Patua One", sans-serif;
   font-size: 2rem;
-  align-self: end;
+  align-self: start;
+  padding-top: 1rem;
+  padding-right: 1rem;
 
 }
 
 figure {
   margin: 0;
+  padding: 0;
+  margin-left: 1rem;
 }
 
 main {
