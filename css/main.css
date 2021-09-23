@@ -24,8 +24,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "banner banner"
-  "col1 col2";
+    "banner banner"
+    "col1 col2";
   gap: 1rem;
   background-color: #f2f1ed;
 }
@@ -47,9 +47,7 @@ body {
 
 ul {
   list-style-type: none;
-
 }
-
 
 h1 {
   padding-bottom: 0;
@@ -81,7 +79,6 @@ ul li a {
   align-self: start;
   padding-top: 1rem;
   padding-right: 1rem;
-
 }
 
 figure {
