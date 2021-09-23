@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: Georgia, serif;
+  line-height: 1.5;
 }
 
 *,
@@ -18,29 +20,79 @@ header {
 }
 
 body {
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "box1 box1"
-  "box2 box3"
+  "banner banner"
+  "col1 col2";
+  gap: 1rem;
+  background-color: #f2f1ed;
+}
+
+.pano {
+  grid-area: banner;
+  padding: 1rem;
+  padding-bottom: 0;
 }
 
 .logo {
   width: 14rem;
-  grid-column: 1;
-  grid-row: 1;
+  grid-area: banner;
+  z-index: 1;
+  align-self: end;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+
+h1 {
+  padding-bottom: 0;
+}
+
+h2 {
+  color: #30658d;
+  font-family: "Patua One", sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+p {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+nav {
+  grid-area: banner;
+  display: flex;
+  place-content: end;
+  padding-right: 1rem;
+}
+
+ul li a {
+  color: #fff;
+  font-family: "Patua One", sans-serif;
+  font-size: 2rem;
   align-self: end;
 
 }
 
-.image {
-  width: 100%;
+figure {
+  margin: 0;
 }
 
-.pano {
-  grid-area: box1;
+main {
+  display: flex;
+  display: contents;
 }
 
 li {
   display: flex;
+  display: contents;
+  justify-content: space-around;
 }
